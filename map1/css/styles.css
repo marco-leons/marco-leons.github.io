@@ -1,0 +1,90 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #f5f3ee;
+    color: #2c2c2c;
+}
+
+/* 1. Banner */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 2. Navbar */
+nav {
+    background-color: #1a2e1a;
+    display: flex;
+}
+
+nav a {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #a8c4a0;
+    text-decoration: none;
+    padding: 1rem 1.8rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: #243824;
+    color: #d4e8d0;
+}
+
+nav a.active {
+    color: #e8f5e4;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    background-color: #2e4a2e;
+}
+
+/* 3. Title */
+.title-block {
+    text-align: center;
+}
+
+.title-block h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #1a2e1a;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+/* 4. Map Container */
+.map-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* 5. Map element */
+#map {
+    height: 700px;
+    border: 2px solid #c8d8c4;
+    border-radius: 4px;
+}
+
+/* 6. Footer */
+footer {
+    margin-top: 2.5rem;
+    padding: 1.4rem 5%;
+    background-color: #1a2e1a;
+    color: #a8c4a0;
+    font-size: 0.9rem;
+    text-align: center;
+}
