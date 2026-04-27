@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Explorer</title>
+    <title>Heatmap</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,18 +19,17 @@
     </div>
 
     <nav>
-        <a href="index.html" class="active">Basic Map</a>
+        <a href="index.html">Basic Map</a>
         <a href="choroplethmap.html">Choropleth Map</a>
-        <a href="heatmap.html">Heatmap</a>
+        <a href="heatmap.html" class="active">Heatmap</a>
     </nav>
 
     <div class="title-block">
-        <h1>Interactive Map Explorer</h1>
+        <h1>Heatmap</h1>
     </div>
 
     <div class="map-container">
         <button onclick="defaultMapSettings()">Default</button>
-        <!-- 5. Map -->
         <div id="map"></div>
     </div>
 
@@ -41,8 +38,8 @@
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-    <script src="js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.min.js"></script>
+    <script src="js/heatmap.js"></script>
 
 </body>
 </html>
